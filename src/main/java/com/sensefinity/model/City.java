@@ -1,9 +1,12 @@
 
 package com.sensefinity.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.annotation.Generated;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -23,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "sunset"
 })
 @Generated("jsonschema2pojo")
-public class City {
+public class City implements Serializable {
 
     @JsonProperty("id")
     private Integer id;

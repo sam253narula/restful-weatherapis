@@ -1,6 +1,7 @@
 
 package com.sensefinity.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
@@ -17,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "lon"
 })
 @Generated("jsonschema2pojo")
-public class Coord {
+public class Coord implements Serializable {
 
     @JsonProperty("lat")
     private Double lat;

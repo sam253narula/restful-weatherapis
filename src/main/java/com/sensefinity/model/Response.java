@@ -1,9 +1,14 @@
 
 package com.sensefinity.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.annotation.Generated;
+
+import org.springframework.data.redis.core.RedisHash;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -20,7 +25,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "city"
 })
 @Generated("jsonschema2pojo")
-public class Response {
+@RedisHash("Response")
+public class Response implements Serializable  {
 
     @JsonProperty("cod")
     private String cod;

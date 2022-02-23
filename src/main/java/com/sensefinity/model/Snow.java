@@ -1,6 +1,7 @@
 
 package com.sensefinity.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
@@ -16,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "3h"
 })
 @Generated("jsonschema2pojo")
-public class Snow {
+public class Snow implements Serializable{
 
     @JsonProperty("3h")
     private Double _3h;

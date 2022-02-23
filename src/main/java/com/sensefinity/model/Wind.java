@@ -1,6 +1,7 @@
 
 package com.sensefinity.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
@@ -18,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "gust"
 })
 @Generated("jsonschema2pojo")
-public class Wind {
+public class Wind implements Serializable {
 
     @JsonProperty("speed")
     private Double speed;

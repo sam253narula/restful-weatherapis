@@ -7,6 +7,6 @@ import com.sensefinity.model.Response;
 @Component
 public interface WeatherService {
 
-	Response getWeather(int cityId);
+	Object getWeather(int cityId);
 
 }
